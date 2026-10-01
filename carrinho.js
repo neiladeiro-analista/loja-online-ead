@@ -1,4 +1,4 @@
-Function calcularTotaldecarrinho(itens) {
+Function calcularTotalcarrinho(itens) {
     if (!Array.isArray(itens)) {
         throw new Error (itens precisa ser um array) ;
     }
@@ -8,5 +8,5 @@ Function calcularTotaldecarrinho(itens) {
     }, 0)
 }
 
-module.esports = { calcularTotaldecarrinho };
+module.exports = { calcularTotalcarrinho };
 
