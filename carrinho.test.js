@@ -4,8 +4,8 @@ const { calcularTotalcarrinho } = require('./carrinho');
 
 test ('calcular o total do carrinho corretamente', () => {
     const itens = [
-        {nome:'camiseta', preco: 50, qunatidade: 2},
-        {nome boné, preco: 30, quantidade: 1},
+        {nome:'camiseta', preco: 50, quantidade: 2},
+        {nome: 'bone', preco: 30, quantidade: 1},
     ];
 
 const total = calcularTotalcarrinho(itens);
@@ -14,5 +14,5 @@ const total = calcularTotalcarrinho(itens);
 });
 
 test('carrinho vazio soma zero', () => {
-    assert.strictEqual(calculartotalcarrinho)([], 0);
+    assert.strictEqual(calcularTotalcarrinho([]), 0);
 })
